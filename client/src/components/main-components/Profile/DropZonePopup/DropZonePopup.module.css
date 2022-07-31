@@ -1,0 +1,49 @@
+.previewImage{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.dropZone_field{
+    margin-top: 20px;
+    width: 700px;
+    height: 160px;
+    border-radius: 12px;
+    border: dashed blue 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.dropAccept{
+    border-color: green
+}
+.dropReject{
+    border-color: red;
+}
+
+.largeAvatarPreview div>img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.littleAvatarPreview div>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.applyNewAvatarBtn{
+    padding: 20px;
+    width: 100%;
+    background-color: #46ff00;
+    color: #fff;
+    font-size: 18px;
+}
+.applyNewAvatarBtn:disabled{
+    background-color: #c6ffc1;
+}
+@media (max-width: 426px) {
+    .dropZone_field{
+        width: 315px;
+    }
+}

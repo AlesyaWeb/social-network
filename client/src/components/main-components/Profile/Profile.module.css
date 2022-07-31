@@ -1,0 +1,102 @@
+.content-hat img{
+    width: 100%;
+    max-height: 250px;
+}
+.profile__wrapper{
+
+}
+.profile_info{
+    position: relative;
+    width: 100%;
+}
+.profile_data_wrapper{
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 3px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.profile_avatar{
+    margin-right: 30px;
+}
+.avatar_img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.description{
+    margin-top: 10px;
+}
+.profile_age, .profile_gender span{
+    font-weight: 600;
+}
+
+.profile_avatar_wrapper{
+    position: relative;
+}
+.avatar_image_cover{
+    transition: all ease .3s;
+    background-color: #fff;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    position: absolute;
+}
+.profile_avatar_wrapper:hover .avatar_image_cover{
+    opacity: 0.4;
+    visibility: visible;
+}
+.avatar_image_cover{
+    cursor: pointer;
+}
+.edit_info_btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 3px;
+    border-radius: 4px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.edit_info_btn a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #70B7FD;
+}
+.profile_name{
+    font-size: calc(18px + 12 * (100vw / 1180));
+}
+.edit_info_btn a:hover{
+    color: #46ff00;
+}
+
+@media (max-width: 475px) {
+    .edit_info_btn{
+        top: 160px;
+    }
+}
+.edit_avatar_image{
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 426px) {
+    .avatar_img{
+        width: 120px;
+        height: 120px;
+    }
+    .edit_info_btn{
+        position: relative;
+    }
+}

@@ -1,0 +1,18 @@
+
+/*.form_control.error input,*/
+/*.form_control.error textarea{*/
+/*    border: 2px solid red;*/
+/*}*/
+
+.form_control.error span {
+    color: red;
+}
+
+.error_field{
+    background-color: red;}
+.error_field.error_true{
+    color: white;
+    width: 100%;
+}
+.error_true{
+}

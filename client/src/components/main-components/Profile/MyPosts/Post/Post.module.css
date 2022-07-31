@@ -1,0 +1,70 @@
+
+.post__item  .post__item__avatar{
+    border-radius: 50%;
+    margin: 10px 10px 10px 0px;
+}
+.post__item{
+    color: crimson;
+    margin: 10px 0px 15px 0px;
+    background: #e3e3e3;
+    padding: 5px;
+    border-radius: 5px;
+}
+.post__text{
+    color: #282c34;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(90, 97, 117, 0.38);
+    padding: 10px;
+}
+.post__content span{
+    font-size: 13px;
+    margin: 0px 15px 0px 0px;
+    cursor: pointer;
+}
+.post_user_info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.post_user_name{
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+}
+
+.post_thumbnails{
+    max-width: 450px;
+}
+.posts_thumbnails_item{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+.likeButton, .dislikeButton{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 21px;
+}
+.likeButton.active{
+    fill: #ff0000;
+}
+.dislikeButton.active{
+    fill: #ff0000;
+}
+.likeButton{
+    background: transparent;
+    border: none;
+}
+.dislikeButton{
+    background: transparent;
+    border: none;
+}
+.User__response{
+    display: flex;
+    align-items: center;
+}
+.User__response__btn_inner{
+    width: 50px;
+}

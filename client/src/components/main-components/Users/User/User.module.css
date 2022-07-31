@@ -1,0 +1,35 @@
+.Friend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.friend__avatar img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.friend__name{
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 21px;
+}
+.online{
+    margin-left: 15px;
+    color: green;
+}
+.ofline{
+    margin-left: 15px;
+    color: red;
+}
+.addToFriendsButtonInner{
+    margin-left: 20px;
+}
+.addToFriendsButtonInner button{
+    cursor: pointer;
+    padding: 3px;
+    border: none;
+    background-color: #1c8bb8;
+    border-radius: 4px;
+    color: #fff;
+}

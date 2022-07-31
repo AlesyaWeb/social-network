@@ -1,0 +1,255 @@
+.dialogs{
+    display: flex;
+    background-color: #f5f5f5;
+    height: 80vh;
+    border: 1px solid gray;
+    justify-content: space-between;
+}
+.dialog{
+    display: flex;
+    flex: 1 1 33.333%;
+    align-items: center;
+    padding: 10px;
+}
+.chat{
+    background-color: #fff;
+    width: 100%;
+    flex: 1 1 66.666%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.messages__wrapper{
+    height: 100%;
+    overflow-y: auto;
+    padding-top: 65px;
+    overflow-x: hidden;
+    padding-right: 10px;
+}
+.messages__wrapper div{
+    max-height: calc(80vh - 60px);
+}
+.chat__wrapper{
+}
+.dialog:hover{
+    background: #d2d2d2;
+    cursor: pointer;
+}
+.dialog__image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.dialog__name{
+    font-size: 21px;
+    margin-left: 10px;
+}
+.own_message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.message_inner{
+    padding-left: 10px;
+}
+.other_message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.sender_avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.other_message .message_content{
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #1877f2;
+    overflow-wrap: break-word;
+    color: white;
+    max-width: 300px;
+}
+.own_message .message_content{
+    padding: 10px;
+    overflow-wrap: break-word;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #c5c5c5;
+    color: white;
+    max-width: 300px;
+}
+.message_inner{
+    display: flex;
+    justify-content: start;
+}
+.sentAt{
+    font-size: 12px;
+}
+.sendMessageForm{
+    padding: 5px;
+    display: flex;
+}
+.sendMessageForm__input{
+    width: 90%;
+    height: 30px;
+    font-size: 18px;
+}
+.sendMessageForm__button{
+    width: 10%;
+    border: none;
+    background-color: #24ffed;
+}
+.createNewDialog{
+    height: 70px;
+    width: 70px;
+    /*width: 100%;*/
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: #ababab;
+    right: 10px;
+}
+.createNewDialog:hover{
+    background-color: #d2d2d2;
+    cursor: pointer;
+}
+
+.createNewDialogWrapper{
+}
+.usersList{
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    overflow-y: auto;
+    background-color: #e5e5e5;
+    top: 30%;
+    right: 50px;
+    -webkit-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.36);
+    padding: 5px;
+    z-index: 10000000000;
+    font-size: 21px;
+    font-weight: 900;
+}
+.usersList__item{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.usersList__item:hover{
+    cursor: pointer;
+    background-color: #c2c2c2;
+}
+.usersList__item__image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.chat__wrapper{
+}
+.dialogUserInfo{
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    background-color: #fff;
+    top: 0;
+    justify-content: center;
+}
+
+.dialogUserInfo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dialogUserInfo__avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+.dialogUserInfo__status_online{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: green;
+    border-radius: 50%;
+}
+.dialogUserInfo__status_offline{
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .createNewDialog{
+        position: relative;
+    }
+    .usersList{
+        overflow-y: auto;
+        max-width: 120px;
+        margin: 0 auto;
+        background-color: #e5e5e5;
+        -webkit-box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.36);
+        box-shadow: 0px 0px 16px 5px rgba(0,0,0,0.36);
+        padding: 5px;
+        z-index: 1;
+        font-size: 14px;
+        font-weight: 900;
+    }
+    .usersList__item{
+        display: flex;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+.dialogs_wrapper{
+    height: 600px;
+}
+@media (max-width: 425px) {
+    .dialogs_wrapper{
+        padding-bottom: 20px;
+        overflow-y: hidden;
+        height: calc(100vh - 130px);
+    }
+}
